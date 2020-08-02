@@ -6,25 +6,26 @@ Now, in order to complete his work properly, Chef has to spend more hours workin
 
 If Chef is unable to complete his work for a week during those five weekdays, then he has to work during the weekend too. Chef wishes to know whether he has to work on weekends or if he can complete his work by working only on weekdays. Help him answer that question. (It is possible that Chef would be unable to finish his work even if he worked all the time, but he does not want to know about that.)
 
-Input
+Input:
 The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
 The first and only line of each test case contains six space-separated integers A1, A2, A3, A4, A5 and P.
 
-Output
+Output:
 For each test case, print a single line containing the string "Yes" if Chef has to work on weekends or "No" otherwise (without quotes).
 
-Constraints
+Constraints:
 1≤T≤1,000
-0≤Ai≤24 for each valid i
+0≤A<sub>i</sub>≤24 for each valid i
 1≤P≤24
 
-Subtasks
+Subtasks:
 Subtask #1 (100 points): original constraints
 
-Example Input
+Example Input:
 2
 14 10 12 6 18 2
 10 10 10 10 10 3
-Example Output
+
+Example Output:
 No
 Yes
