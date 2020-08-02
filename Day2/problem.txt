@@ -15,7 +15,7 @@ For each test case, print a single line containing the string "Yes" if Chef has 
 
 Constraints:
 1≤T≤1,000
-0≤A <sub>i</sub>≤24 for each valid i
+0≤Ai≤24 for each valid i
 1≤P≤24
 
 Subtasks:
