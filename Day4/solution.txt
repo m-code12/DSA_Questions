@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t,i,n,k;
+    cin>>t;
+    while(t!=0){
+        int sum=0,sumk=0;
+        cin>>n;
+        cin>>k;
+        int arr[n];
+        for(i=0;i<n;i++)
+        {
+            cin>>arr[i];
+            sum = sum + arr[i];
+        }
+        for(i=0;i<n;i++){
+            if(arr[i]>k){
+                sumk+=k;
+            }
+            else{
+                sumk = sumk + arr[i];
+            }
+        }
+        //cout<<sum<<" ";
+        //cout<<sumk<<" ";
+        cout<<sum - sumk<<"\n";
+        t--;
+    }
+    
+    
+    
+	// your code goes here
+	return 0;
+}
