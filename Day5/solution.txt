@@ -1,1 +1,30 @@
 
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int t,i,n,m,b;
+    cin>>t;
+    while(t!=0)
+    {
+        int x,present,now,count=0;
+        cin>>n>>b>>m;
+        present = -1;
+        while(m--){
+            cin>>x;
+            
+            now = x/b;
+            if(present != now)
+            {
+                present = now;
+                count++;
+               //cout<<count; 
+            }
+        }
+        cout<<count<<"\n";
+        t--;
+    }
+	// your code goes here
+	return 0;
+}
