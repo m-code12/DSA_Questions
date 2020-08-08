@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int t,h,p;
+    cin>>t;
+    while(t!=0)
+    {
+        cin>>h>>p;
+        while(p>0 && h>0){
+            if(p>h)
+            h=0;
+            else{
+             h=h-p;
+            p=p/2;
+            //cout<<h<<"\n"<<p<<"\n";   
+            }
+        }
+        if(h==0)
+        cout<<"1"<<"\n";
+        else if(p==0)
+        cout<<"0"<<"\n";
+        t--;
+    }
+	// your code goes here
+	return 0;
+}
