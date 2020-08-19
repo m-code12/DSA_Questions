@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    long int t,c,r,h,i;
+    cin>>t;
+    while(t!=0)
+    {
+        cin>>c;
+        cin>>r;
+        if(c%9==0)
+        h=c/9;
+        else
+        h= c/9 + 1;
+        
+        if(r%9==0)
+        i=r/9;
+        else
+        i = r/9 + 1;
+        if(h==i)
+        {
+        cout<<"1"<<" ";
+        cout<<h<<"\n";
+        }
+        else if(h>i)
+        {
+           cout<<"1"<<" ";
+           cout<<i<<"\n";
+        }
+        else 
+        {
+         cout<<"0"<<" ";
+         cout<<h<<"\n";   
+        }
+      t--;  
+        
+    }
+    
+	// your code goes here
+	return 0;
+}
