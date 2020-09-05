@@ -1,0 +1,37 @@
+// CPP program to count frequencies of array items 
+#include <bits/stdc++.h>
+#include <cmath> 
+using namespace std; 
+  
+int main() 
+{ 
+    long double t,a,c,d;
+    long long int ans,b;
+    long double n,an;
+    cin>>t;
+    while(t--){
+        cin>>a>>b>>c>>d;
+        n=0,an=0,ans=0;
+        if(a>b)
+        {
+           if(c>d){
+             n = (a-b)/(c-d);
+             
+             an = int(ceil(n));
+             
+             ans = b + an*c;
+             cout<<ans<<"\n";
+               
+           } 
+           else
+           {
+               cout<<"-1"<<"\n";
+           }
+        }
+        else
+        cout<<b<<"\n";
+        
+    }
+    
+    return 0; 
+} 
