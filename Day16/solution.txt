@@ -1,0 +1,41 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+
+bool isNar(int x,int n){
+    int r = x;
+    int sum = 0;
+
+    for(int i=0; i<n ; ++i){
+        sum += pow(x%10,n);
+        if(sum > r)
+            return false;
+        x /= 10;
+    }
+    return (sum == r);
+}
+
+int main() {
+    
+    int n;
+    cin>>n;
+    vector<int> vec;
+    int start = pow(10,n-1);
+    double end = pow(10,n);
+   
+   if(n==1)
+   vec.push_back(0);
+    
+    
+    for(int i=start;i<end;++i)
+    {
+        if(isNar(i,n))
+            vec.push_back(i);
+    }
+    
+    for(int i=0;i<vec.size();++i)
+    cout<<vec[i]<<" ";
+    	// your code goes here
+	return 0;
+}
