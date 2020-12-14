@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+
+
+/*
+ * Complete the 'fourthBit' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER number as parameter.
+ */
+
+int fourthBit(int number) {
+int binary[10000];
+
+int i=0;
+while(number>0){
+    binary[i]=number%2;
+    number = number /2;
+    i++;
+}
+
+return binary[3];
+}
+int main()
+{
+fourthBit(number);
+return 0;
+}
