@@ -1,3 +1,3 @@
-# CP_Questions
+#DSA_Questions
 
 ## A repo for daily practice of DSA Questions
