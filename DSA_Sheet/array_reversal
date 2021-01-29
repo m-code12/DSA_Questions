@@ -26,3 +26,36 @@ int main() {
 	// your code goes here
 	return 0;
 }
+
+String Reversal
+
+Write a function that reverses a string. The input string is given as an array of characters char[].
+
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+
+
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        
+        int st=0,e=s.size()-1;
+        
+        while(st<e){
+            swap(s[st],s[e]);
+            st++;
+            e--;
+        }
+        
+    
+    }
+};
+
+--------------- Algorithm from STL---------
+
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        
+    reverse(s.begin(),s.end());
+    }
+};
